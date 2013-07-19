@@ -1,0 +1,51 @@
+/*   
+	Designed and Developed by RJ McCollam - @rjmccollam - http://www.rjmccollam.com & http://www.wedodev.com
+*/
+
+/*---- Variables ----*/
+$black: #333;
+$white: #fefefe;
+$light-grey: #f1f4f9;
+$dark-grey: #bfbfbf;
+$blue: #0099cc;
+$bottom: 0 0 40px;
+$bottom-left: 0 0 40px 60px;
+
+
+/*---- Mixins ----*/
+@mixin wrapper {
+	background: $white;
+	padding: 30px 40px;
+	margin: 0 0 40px 0;
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+	border: 1px solid #fff;
+	float: left;
+}
+
+
+/*---- General ----*/
+* {margin: 0; padding: 0;}
+body {background: $light-grey; font: normal 1.125em/1.9em "Roboto"; color: $black;}
+.container {width: 80%; max-width: 1200px; margin: auto; position: relative;}
+.right {float: right;}
+.left {float: left;}
+.clear {clear: both;}
+.none {display: none;}
+a img {outline: none; border: none;}
+
+
+/*---- Container Styles ----*/
+.content {@include wrapper;}
+
+
+/*---- Content Style ----*/
+h1 {font-weight: 100; font-size: 2.2em; color: $blue; margin: $bottom;}
+h2 {font-weight: 100; font-size: 1.8em; color: $blue; margin: $bottom;}
+h3 {font-weight: 100; font-size: 1.4em; color: $blue; margin: $bottom;}
+p {margin: $bottom;}
+ol, ul {margin: $bottom-left; line-height: 2.2em;}
+pre {background: $dark-grey; width: 100%;}
+a {color: $blue; text-decoration: none;}
+a:hover {color: $dark-grey;}
+
+.main-title {text-align: center; margin: 40px 0;}

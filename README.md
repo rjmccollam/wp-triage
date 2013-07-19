@@ -1,3 +1,5 @@
-##HTML Development Files
+##My Personal Site...Open Sourced
 
-A starting point for HTML and CSS projects. Typically I use this as a starting point for my WordPress builds so the CSS has some WordPress styles and bloginfo already in it.
+I have been wanting to learn Sass and work on my design skills so what better way to learn new things then to actually do them! And what better way to do them then on your own site. When I decided to redo my website I decided to open source it for anyone else to use and also track the progress as it changes. 
+
+Enjoy and feel free to use and abuse.
