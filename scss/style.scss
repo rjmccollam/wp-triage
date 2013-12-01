@@ -1,32 +1,8 @@
-/*   
-	Theme Name: Bare
-	Theme URI: http://www.rjmccollam.com
-	Description: A starting point for WordPress development projects
-	Author: RJ McCollam
-	Author URI: http://www.rjmccollam.com
-	Version: 1.0
-	Tags: blank, starter, basic, bare
-*/
-
-/*---- Variables ----*/
-$black: #000; // well you know...it's black
-$white: #fff; // and well...it's white
-
-
-
-/*---- Mixins ----*/
-
-
-
-/*---- General ----*/
-* {margin: 0; padding: 0;}
-body {font: ; color: #;}
-.container {width: 978px; margin: 0 auto; position: relative;}
-.right {float: right;}
-.left {float: left;}
-.clear {clear: both;}
-.none {display: none;}
-a img {outline: none; border: none;}
+// Partials
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_globals.scss";
 
 
 

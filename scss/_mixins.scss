@@ -1,0 +1,15 @@
+// Transition
+@mixin transition ($properties...) {
+	transition: $properties .3s ease-out;
+	-webkit-transition: $properties .3s ease-out;
+	-moz-transition: $properties .3s ease-out;
+	-ms-transition: $properties .3s ease-out;
+	-o-transition: $properties .3s ease-out;
+}
+
+// Sprite
+@mixin sprite ($x, $y, $height, $width) {
+	background: url(images/sprite.png) $x $y no-repeat;
+	height: $height;
+	width: $width;
+}
