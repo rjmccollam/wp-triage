@@ -1,6 +1,6 @@
 // *-------- Fonts --------*
-$primary-font: "Lato", helvetica, arial, sans-serif;
-$secondary-font: "Open Sans", verdana, tahoma, sans-serif;
+$primary-font: "Open Sans", helvetica, arial, sans-serif;
+$secondary-font: "Lato", verdana, tahoma, sans-serif;
 $tertiary-font: "Oswald", verdana, tahoma, sans-serif;
 
 
@@ -9,14 +9,15 @@ $tertiary-font: "Oswald", verdana, tahoma, sans-serif;
 // General
 $black: #000;
 $white: #fff;
+$bg: #21759b;
 
 // Typography
-$text-color: #222; // used for main body text
-$h1: #222; // used for <h1>'s
-$h2: #222; // used for <h2>'s
-$h3: #222; // used for <h3>'s
-$link: #f00; // main link color
-$link-hover: #222; // main link hover color
+$text-color: #464646; // used for main body text
+$h1: #fefefe; // used for <h1>'s
+$h2: #d54e21; // used for <h2>'s
+$h3: #d54e21; // used for <h3>'s
+$link: #21759b; // main link color
+$link-hover: #d54e21; // main link hover color
 
 // Shadows - used for box and text shadows
 $shadow-25: rgba(0,0,0, .25);
@@ -29,8 +30,8 @@ $shadow-100: rgb(0,0,0);
 // *-------- Units --------*/
 
 // Typography
-$font-size: .875rem; // used for main body text
-$line-height: 1.125rem; // used for line-height on main body text
-$h1-size: 2.5rem; // used for size of content <h1>
-$h2-size: 2rem; // used for size of content <h2>
+$font-size: 1rem; // used for main body text
+$line-height: 1.2rem; // used for line-height on main body text
+$h1-size: 4rem; // used for size of content <h1>
+$h2-size: 2.5rem; // used for size of content <h2>
 $h3-size: 1.5rem; // used for size of content <h3>

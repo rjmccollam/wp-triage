@@ -1,5 +1,5 @@
-body {font-family: $primary-font; font-size: $font-size; line-height: $line-height; color: $text-color;}
-.container {width: 978px; margin: 0 auto; position: relative;}
+body {background: #fefefe url(images/bg.jpg) top center no-repeat; font-family: $primary-font; font-size: $font-size; line-height: $line-height; color: $text-color;}
+.container {width: 90%; max-width: 960px; margin: 0 auto; position: relative;}
 .right {float: right;}
 .left {float: left;}
 .clear {clear: both;}
@@ -8,6 +8,6 @@ a {color: $link; text-decoration: none; @include transition(all);
 	&:hover {color: $link-hover; @include transition(all);}
 	img {outline: none; border: none;}
 }
-h1 {font-family: $secondary-font; font-size: $h1-size; line-height: 1em; color: $h1; font-weight: 400;}
-h2 {font-family: $primary-font; font-size: $h2-size; line-height: 1em; color: $h2; font-weight: 400;}
-h3 {font-family: $tertiary-font; font-size: $h3-size; line-height: 1em; color: $h3; font-weight: 400;}
+h1 {font-family: $secondary-font; font-size: $h1-size; line-height: 1.2em; color: $h1; font-weight: 300; font-style: italic; text-shadow: 1px 1px 2px $black;}
+h2 {font-family: $secondary-font; font-size: $h2-size; line-height: 1.2em; color: $h2; font-weight: 300; margin: 0 0 30px;}
+h3 {font-family: $tertiary-font; font-size: $h3-size; line-height: 1.2em; color: $h3; font-weight: 400;}

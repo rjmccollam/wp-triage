@@ -6,46 +6,25 @@
 
 
 
-/*---- Header ----*/
-
-
-
-
 /*---- Home Page ----*/
-
-
-
-
-/*---- Pages ----*/
-
-
-
-
-/*---- Single/Archive/Search ----*/
-.meta {margin: -20px 0 20px;}
-.post {margin: 0 0 20px; padding: 0 0 20px; border-bottom: 1px solid #666;}
-.read-more {}
+.splash {text-align: center; margin: 30px auto 110px;
+	.wp-logo {margin: 0 0 30px;}
+	h1 {margin: 0 0 40px;
+		span {font-weight: 700;}
+	}
+	form {position: relative; left: 15%;
+		input[type="email"] {outline: none; border: 1px solid #fefefe; background: $white; font-family: $primary-font; font-size: 1.2rem; font-weight: 300; font-style: italic; color: $text-color; width: 50%; padding: 8px 1%; box-shadow: 0 0 5px $shadow-50;
+			&:focus {}
+		}
+		input[type="submit"] {-webkit-appearance: none; border-radius: 0; outline: none; border: none; font-family: $primary-font; font-size: 1.2rem; font-weight: 700; color: $white; text-transform: uppercase; padding: 9px 1%; cursor: pointer; background: $h2; width: 15%; position: relative; left: 2%; @include transition(all);
+			&:hover {background: lighten($h2, 10%); @include transition(all);}
+		}
+	}
+}
+.center {text-align: center;}
+.bigger {font-size: 1.2rem; line-height: 1.8rem; font-style: italic;}
 
 
 
 /*---- Footer ----*/
-
-
-
-
-/*---- Comments ----*/
-ol.commentlist {list-style: none;}
-ol.commentlist li.comment {border-bottom: 1px dotted #666; padding: 10px;}
-ol.commentlist li.comment div.vcard cite.fn {font-style: normal;}
-ol.commentlist li.comment div.vcard img.avatar {float:right; margin: 0 0 10px 10px;}
-ol.commentlist li.comment div.comment-meta {font-size: 10px;}
-ol.commentlist li.comment div.comment-meta a {color: #ccc;}
-ol.commentlist li.comment div.reply {font-size: 11px;}
-ol.commentlist li.comment div.reply a {font-weight: bold;}
-ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
-ol.commentlist li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
-ol.commentlist li.even {background: #fff;}
-ol.commentlist li.odd {background: #f6f6f6;}
-ol.commentlist li.parent {border-left: 5px solid #111;}
+.footer {text-align: center; font-size: .875rem; margin: 30px 0; font-style: italic;}
