@@ -1,7 +1,6 @@
 // *-------- Fonts --------*
-$primary-font: "Open Sans", helvetica, arial, sans-serif;
-$secondary-font: "Lato", verdana, tahoma, sans-serif;
-$tertiary-font: "Oswald", verdana, tahoma, sans-serif;
+$primary-font: "Lato", helvetica, arial, sans-serif;
+$secondary-font: "Montserrat", verdana, tahoma, sans-serif;
 
 
 // *-------- Colors --------*
@@ -9,7 +8,7 @@ $tertiary-font: "Oswald", verdana, tahoma, sans-serif;
 // General
 $black: #000;
 $white: #fff;
-$bg: #21759b;
+$grey: #eee;
 
 // Typography
 $text-color: #464646; // used for main body text
@@ -27,11 +26,19 @@ $shadow-100: rgb(0,0,0);
 
 
 
-// *-------- Units --------*/
+// *-------- Units --------*
 
 // Typography
 $font-size: 1rem; // used for main body text
 $line-height: 1.2rem; // used for line-height on main body text
-$h1-size: 4rem; // used for size of content <h1>
-$h2-size: 2.5rem; // used for size of content <h2>
-$h3-size: 1.5rem; // used for size of content <h3>
+$h1-size: 3.5rem; // used for size of content <h1>
+$h2-size: 2.3rem; // used for size of content <h2>
+$h3-size: 1.8rem; // used for size of content <h3>
+
+
+
+// *-------- Placeholders --------*
+
+%button {text-transform: uppercase; color: $link-hover; border: 2px solid $link-hover; border-radius: 3px; padding: 8px 15px;
+	&:hover {border-color: $link; color: $link;}
+}

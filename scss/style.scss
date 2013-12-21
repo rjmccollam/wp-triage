@@ -6,23 +6,88 @@
 
 
 
-/*---- Home Page ----*/
-.splash {text-align: center; margin: 30px auto 110px;
-	.wp-logo {margin: 0 0 30px;}
-	h1 {margin: 0 0 40px;
-		span {font-weight: 700;}
+/*---- Header ----*/
+.header {background: $grey; position: fixed; width: 100%; top: 0; height: 50px; font-family: $secondary-font; border-bottom: 2px solid darken($grey, 30%); z-index: 1000;
+	.logo {font-weight: 700; font-size: 1.6rem; margin: 15px 0 0;}
+	.nav-link {display: none; float: right; text-decoration: none; height: 100%; margin: 16px 20px 0 0;
+		@media screen and (max-width: 865px) {display: block; color: $link;}
 	}
-	form {position: relative; left: 15%;
-		input[type="email"] {outline: none; border: 1px solid #fefefe; background: $white; font-family: $primary-font; font-size: 1.2rem; font-weight: 300; font-style: italic; color: $text-color; width: 50%; padding: 8px 1%; box-shadow: 0 0 5px $shadow-50;
-			&:focus {}
+	.nav {@include transition(all); margin: 15px 0 0;
+		@media screen and (max-width: 865px) {clear: both; min-width: 100%; float: none; overflow: hidden; max-height: 0; background-color: $grey; position: relative; top: 8px;
+			&.active {max-height: 100%;}
 		}
-		input[type="submit"] {-webkit-appearance: none; border-radius: 0; outline: none; border: none; font-family: $primary-font; font-size: 1.2rem; font-weight: 700; color: $white; text-transform: uppercase; padding: 9px 1%; cursor: pointer; background: $h2; width: 15%; position: relative; left: 2%; @include transition(all);
-			&:hover {background: lighten($h2, 10%); @include transition(all);}
+		@media screen and (max-width: 415px) {top: 17px;}
+		ul {padding: 0px; margin: 0px; list-style: none; position: relative; top: 0; display: inline-table;
+			@media screen and (max-width: 865px) {display: inline;}
+			&:after {content: ""; clear: both; display: block;}
+			li {display: inline-block;
+				@media screen and (max-width: 865px) {display: block;}
+				&.sign-up-mobile {display: none;
+					@media screen and (max-width: 415px) {display: block;
+						a {color: $link-hover;}
+					}
+				}
+				a {display: block; color: $link; font-size: .875rem; margin: 0 20px 0 0;
+					@media screen and (max-width: 865px) {display: block; padding: 10px; margin: 0; border-bottom: 1px solid darken($grey, 30%); position: relative;}
+					&:hover {color: $link-hover;}
+				}
+			}
+		}
+	}
+	.button {@extend %button; margin: 5px 0 0;
+		@media screen and (max-width: 415px) {display: none;}
+	}
+}
+
+
+
+/*---- Sections ----*/
+section {margin: 100px 0;
+	.img-left {float: left; margin: 0 30px 5px 0;
+		@media screen and (max-width: 480px) {float: none; margin: 0 0 10px; width: 100%;}
+	}
+	.img-right {float: right; margin: 0 0 5px 30px;
+		@media screen and (max-width: 480px) {float: none; margin: 0 0 10px; width: 100%;}
+	}
+	p {font-size: 1.2rem; line-height: 1.8rem; font-weight: 300;
+		@media screen and (max-width: 480px) {font-size: 1rem;}
+	}
+	.wufoo {margin: 30px auto 0; width: 360px;
+		@media screen and (max-width: 540px) {width: 100%;}
+		input[type="text"], input[type="email"] {outline: none; border: 1px solid darken($grey, 30%); font-family: $primary-font; font-size: 1rem; font-weight: 400; font-style: italic; width: 350px; height: 40px; padding: 0 10px; border-radius: 3px; @include transition(all); display: block; margin: 0 0 20px; color: darken($grey, 30%);
+			@media screen and (max-width: 540px) {width: 94%; padding: 0 3%;}
+			&:focus {box-shadow: 0 0 5px $shadow-25; @include transition(all);}
+		}
+		fieldset {
+			#title6 {font-family: $primary-font; font-size: 1.3rem; margin: 10px 0 20px; font-style: italic; font-weight: 300;}
+			div {width: 50%; float: left; margin: 0 0 10px;} 
+		}
+		input[type="submit"] {-webkit-appearance: none; border-radius: 3px; outline: none; border: none; width: 115px; height: 41px; background: $link; font-family: $primary-font; font-size: 1rem; font-weight: 400; color: $white; text-transform: uppercase; cursor: pointer; @include transition(all); margin: 10px 0 0; text-align: center;
+			@media screen and (max-width: 540px) {margin: 10px 0 0;}
+			&:hover {background: lighten($link, 10%); @include transition(all);}
+		}
+	}
+	#mc-embedded-subscribe-form {margin: 30px auto 0; width: 497px;
+		@media screen and (max-width: 540px) {width: 100%;}
+		input[type="text"], input[type="email"] {outline: none; border: 1px solid darken($grey, 30%); font-family: $primary-font; font-size: 1rem; font-weight: 400; font-style: italic; width: 350px; height: 40px; padding: 0 10px; border-radius: 3px; @include transition(all); color: darken($grey, 30%);
+			@media screen and (max-width: 540px) {width: 94%; padding: 0 3%;}
+			&:focus {box-shadow: 0 0 5px $shadow-25; @include transition(all);}
+		}
+		input[type="submit"] {-webkit-appearance: none; border-radius: 3px; outline: none; border: none; width: 115px; height: 41px; background: $link; font-family: $primary-font; font-size: 1rem; font-weight: 400; color: $white; text-transform: uppercase; cursor: pointer; @include transition(all); margin: 0 0 0 10px; text-align: center;
+			@media screen and (max-width: 540px) {margin: 10px 0 0;}
+			&:hover {background: lighten($link, 10%); @include transition(all);}
 		}
 	}
 }
-.center {text-align: center;}
-.bigger {font-size: 1.2rem; line-height: 1.8rem; font-style: italic;}
+
+
+
+/*---- Splash Section ----*/
+.splash {background: url(images/bg.jpg) top center no-repeat; padding: 30px 0 45px;
+	.button {@extend %button; color: $white; border-color: $white; width: 150px; text-align: center; padding: 10px; margin: 25px 25px 0 0;
+		&:hover {color: $white; border-color: $white; opacity: .6;}
+	}
+}
 
 
 

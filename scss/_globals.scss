@@ -1,4 +1,4 @@
-body {background: #fefefe url(images/bg.jpg) top center no-repeat; font-family: $primary-font; font-size: $font-size; line-height: $line-height; color: $text-color;}
+body {font-family: $primary-font; font-size: $font-size; line-height: $line-height; color: $text-color; padding: 52px 0 0;}
 .container {width: 90%; max-width: 960px; margin: 0 auto; position: relative;}
 .right {float: right;}
 .left {float: left;}
@@ -8,6 +8,13 @@ a {color: $link; text-decoration: none; @include transition(all);
 	&:hover {color: $link-hover; @include transition(all);}
 	img {outline: none; border: none;}
 }
-h1 {font-family: $secondary-font; font-size: $h1-size; line-height: 1.2em; color: $h1; font-weight: 300; font-style: italic; text-shadow: 1px 1px 2px $black;}
-h2 {font-family: $secondary-font; font-size: $h2-size; line-height: 1.2em; color: $h2; font-weight: 300; margin: 0 0 30px;}
-h3 {font-family: $tertiary-font; font-size: $h3-size; line-height: 1.2em; color: $h3; font-weight: 400;}
+em {font-style: italic;}
+strong {font-weight: 700;}
+h1 {font-family: $primary-font; font-size: $h1-size; line-height: 1.2em; color: $h1; font-weight: 300; text-shadow: 1px 0 2px $shadow-50;
+	@media screen and (max-width: 480px) {font-size: $h1-size * .7;}
+	span {font-weight: 700; font-style: italic;}
+}
+h2 {font-family: $primary-font; font-size: $h2-size; line-height: 1.2em; color: $h2; font-weight: 300; text-transform: uppercase; margin: 0 0 30px; text-align: center;
+	@media screen and (max-width: 480px) {font-size: $h2-size * .7;}
+}
+h3 {font-family: $primary-font; font-size: $h3-size; line-height: 1.2em; color: $h3; font-weight: 300; text-align: center; margin: 30px 0 0;}
